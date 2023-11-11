@@ -1,0 +1,184 @@
+@media screen and (max-width:767px) {
+    .site-header .navbar-collapse {
+        z-index: 9999;
+        min-height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transform: translateX(-320px) !important;
+        width: 320px !important;
+        margin: 0;
+        background: #000;
+        transition: 0.2s;
+    }
+    .site-header .navbar-nav li.nav-item {
+        padding: 10px 20px;
+    }
+    .site-header .navbar-collapse.show { 
+        transform: translateX(0) !important;
+    }
+    .site-header .navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link {
+        min-height: auto;
+    }
+    .site-header .navbar-collapse .navbar-nav li.nav-item a:before {
+        display: none;
+    }
+    .site-header .navbar button.navbar-toggler {
+        padding: 0;
+        border: 0;
+        outline: 0;
+        box-shadow: 0 0 0 0 #fff;
+    }
+    .navbar-toggler span.navbar-toggler-icon:before {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        border-radius: 10px;
+    }
+    .navbar-toggler span.navbar-toggler-icon:after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: -13px;
+        left: 0;
+        border-radius: 10px;
+    }
+    .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon {
+        transform: rotate(45deg);
+        width: 35px;
+        height: 4px;
+    }
+    .site-header .navbar-nav li.nav-item a.nav-link {
+        color: #fff;
+        font-size: 20px;
+    }
+    .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon:before {
+        transform: rotate(90deg);
+        width: 35px;
+        top: 0;
+    }
+    .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon:after {
+        display: none;
+    }
+    .navbar-toggler span.navbar-toggler-icon {
+        width: 40px;
+        height: 3px;
+        background: #fff;
+        border-radius: 20px;
+        position: relative;
+        transition: 0.2s;
+    } 
+    .banner {
+        height: 60vh;
+    }
+    h1.hdng-h1 {  
+        font-size: 30px;
+        line-height: 40px;
+        padding-top: 50px;
+    }
+    .banner-data p {
+        font-size: 16px;
+    }
+    .success-sec-data {
+        margin-bottom: 30px;
+    }
+    .success-sec-data .success-sec-img {
+        margin: 0 auto 20px;
+    }
+    h2.hdng-h2 {
+        font-size: 34px;
+    }
+    h6.hdng-h6 {
+        font-size: 20px;
+    }
+    .product-inner {
+        padding: 34px 0;
+    }
+    .about-sec-txt h5 {
+        margin-top: 14px;
+    }
+    h4.hdng-h4 {
+        font-size: 24px;
+    }
+    .about-sec {
+        padding: 50px 0;
+    }
+    p.para-16 {
+        margin-top: 16px;
+    }
+    .techno {
+        padding: 50px 0;
+    }
+    .testimonials .quote {
+        width: 26px;
+    }
+    .testimonial-box-data {
+        margin-top: 28px;
+    }
+    .counter-sec-data h2.hdng-h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .counter-sec-data p {
+        font-size: 17px;
+    }
+    .counter-sec .col-md-4 {
+        width: 33%;
+    }
+    .counter-sec-data img {
+        width: 40px;
+    }
+    .blog-sec {
+        padding: 50px 0;
+    }
+    .blog-box {
+        margin-bottom: 30px;
+    }
+    .blog-btn {
+        margin-top: 30px;
+    }
+    .site-footer .col {
+        flex: 0 0 50%;
+    }
+    .site-footer .row .col:first-child {
+        flex: 0 0 100%;
+    }
+    .site-footer .row .col:last-child {
+        flex: 0 0 100%;
+    }
+    .site-footer .footer-data h3 br {
+        display: none;
+    }
+    .footer-data {
+        margin-bottom: 24px;
+    }
+    .footer-cnt {
+        margin-top: 16px;
+    }
+    .bottom-footer {
+        margin-top: 40px;
+    }
+    .bottom-links .listing li a {
+        font-size: 14px;
+    }
+    .copyright p {
+        font-size: 13px;
+    }
+    .contact-details p { 
+        font-size: 16px;
+    }
+    .testimonial-box-content {
+        margin-right: 0;
+    }
+    .service-sec {
+        padding-bottom: 55px;
+    }
+
+}
