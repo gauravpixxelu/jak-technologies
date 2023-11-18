@@ -1,86 +1,108 @@
-import Welspun from 'assets/images/homepage/welspun.svg'
-import Wipro from 'assets/images/homepage/wipro.svg'
-
+import Pentaho from 'assets/images/homepage/pentaho.png'
+import React from 'assets/images/homepage/react.png'
+import Pythan from 'assets/images/homepage/pythan.png'
+import Pandas from 'assets/images/homepage/pandas.png'
+import Postgre from 'assets/images/homepage/postgre.png'
+import Flask from 'assets/images/homepage/flask.png'
+import OpenAI from 'assets/images/homepage/openai.png'
+import Amazon from 'assets/images/homepage/amazon.png'
+import Echarts from 'assets/images/homepage/echarts.png'
+import Spacy from 'assets/images/homepage/spacy.png'
+import LangChain from 'assets/images/homepage/langchain.png'
+import Sap from 'assets/images/homepage/sap.png'
 
 interface CustomFeatureDto {
     id: number;
     text: string;
     image: string;
     bgColor: string;
+    textColor: string;
 }
 
 const technology: CustomFeatureDto[] = [
     {
         id: 1,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#DFF3F7",
+        image: Pentaho,
+        text: "Pentaho / SSIS / SAP BODS",
+        bgColor: "#EAF5FF",
+        textColor: "#024A87",
     },
     {
         id: 2,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#DFF4D9",
+        image: React,
+        text: "React JS",
+        bgColor: "#E2FBFF",
+        textColor: "#009DBA",
     },
     {
         id: 3,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#FDE3BC",
+        image: Pythan,
+        text: "NLTK/Python",
+        bgColor: "#FFF9E0",
+        textColor: "#E9BC00",
     },
     {
         id: 4,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#FCD8D5",
+        image: Pandas,
+        text: "Pandas",
+        bgColor: "#ECE8FF",
+        textColor: "#1B00B0",
     },
     {
         id: 5,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#D9E7F1",
+        image: Postgre,
+        text: "Postgres SQL",
+        bgColor: "#EAF5FF",
+        textColor: "#336790",
     },
     {
         id: 6,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#ECECEC",
+        image: Flask,
+        text: "Flask",
+        bgColor: "#F9F9F9",
+        textColor: "#000000",
     },
     {
         id: 7,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#E7E1EF",
+        image: OpenAI,
+        text: "Open AI",
+        bgColor: "#E9FFFA",
+        textColor: "#068C6B",
     },
     {
         id: 8,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#F5FEAB",
+        image: Echarts,
+        text: "Apache E Charts",
+        bgColor: "#FFEDF1",
+        textColor: "#E43961",
     },
     {
         id: 9,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#D9F1D3",
+        image: Spacy,
+        text: "Spacy",
+        bgColor: "#F4FCFF",
+        textColor: "#09A3D5",
     },
     {
         id: 10,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#FDE0C3",
+        image: LangChain,
+        text: "Langchain",
+        bgColor: "#EAF5FF",
+        textColor: "#0B448C",
     },
     {
         id: 11,
-        image: Welspun,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#EBE8F2",
-    },
+        image: Sap,
+        text: "MSBI / SAP BI / Tableau",
+        bgColor: "#EAF5FF",
+        textColor: "#0B1C71",
+    },    
     {
         id: 12,
-        image: Wipro,
-        text: "Wipro is an Indian multinational corporation that provides information technology.",
-        bgColor: "#E9F9A2",
+        image: Amazon,
+        text: "AWS RDS For Storage Data/AWS Services (EC2, S3, API Gateway, Lambda...)",
+        bgColor: "#FFF4E8",
+        textColor: "#F68D11",
     },
 ];
 
@@ -94,16 +116,16 @@ const TechnologySection = (props: Props) => {
             <section className="technology-sec">
                 <div className="techno">
                     <div className="container">
-                        <div className="hdng">
-                            <h2 className="hdng-h2">Two+ million man-hours across technology stacks</h2>
-                            <p className="para-16">Jak Technologies, as a Business Intelligence and Analytics company, has deep experience in executing BI, Analytics, Big Data, and Data Science projects covering data integration, data governance, dashboards & reports, ad-hoc analysis, migration, big data analytics, data science, real-time analytics, mobile BI, cloud BI, and production support. GrayMatter has worked across technology stacks and delivered offerings including</p>
+                        <div className="hdng" data-aos="fade-up">
+                            <h2 className="hdng-h2">Our Technological Expertise & Tech Stack</h2>
+                            <p className="para-16">As a leading Data Transformation company, JAK Tech possesses profound expertise in implementing BI, Analytics, Big Data, and Data Science projects. Our capabilities span various facets, encompassing data integration, governance, dashboard and report development, ad-hoc analysis, real-time analytics, migration, big data analytics, data science, mobile BI, cloud BI, and production support. Across diverse technology stacks, we have successfully delivered solutions, including specialized offerings in Pentaho, SAP BI, MS BI, services and beyond</p>
                         </div>
-                        <div className="row">
+                        <div className="row" data-aos="fade-up">
                             {technology.map((technologies) => (
                                 <div className="col-md-3" key={technologies.id}>
                                     <div className="technology-sec-data" style={{ backgroundColor: technologies.bgColor }}>
                                         <img src={technologies.image} alt="" />
-                                        <p>{technologies.text}</p>
+                                        <p style={{ color: technologies.textColor }}>{technologies.text}</p>
                                     </div>
                                 </div>
                             ))}

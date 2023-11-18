@@ -180,5 +180,13 @@
     .service-sec {
         padding-bottom: 55px;
     }
+    .services-banner .services-banner-data {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .services-banner .services-banner-data p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 
 }

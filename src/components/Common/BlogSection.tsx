@@ -45,11 +45,11 @@ const BlogSection = (props: Props) => {
 
             <section className="blog-sec">
                 <div className="container">
-                    <div className="hdng">
+                    <div className="hdng" data-aos="fade-up">
                         <h2 className="hdng-h2">Our Blog and Insight</h2>
                         <p className="para-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
                     </div>
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         {blog.map((blogs) => (
                             <div className="col-md-4" key={blogs.id}>
                                 <div className="blog-box">
@@ -65,7 +65,7 @@ const BlogSection = (props: Props) => {
                             </div>
                         ))}
                     </div>
-                    <div className="blog-btn">
+                    <div className="blog-btn" data-aos="fade-up">
                         <Link className="custom-btn2" to="#"><span>View All Blogs</span></Link>
                     </div>
                 </div>

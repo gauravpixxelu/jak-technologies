@@ -5,11 +5,6 @@ import Avtar from 'assets/images/homepage/avtar.png'
 import Clients from 'assets/images/homepage/clients.jpg'
 import Quote from 'assets/icons/homepage/quote.svg'
 
-interface CustomFeatureDto {
-    id: number;
-    title: string;
-    image: string;
-}
 
 const testimonials = [
     {
@@ -83,14 +78,14 @@ const TestimonialSection = (props: Props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="hdng">
+                            <div className="hdng" data-aos="fade-up">
                                 <h2 className="hdng-h2">Our Happy Clients</h2>
                                 <p className="para-16">A happy customer is a repeat customer. To keep customers, businesses and enterprises are trying everything from operating social networking sites to running daily promotions.</p>
                                 <img src={Clients} alt="" />
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="testimonials">
+                            <div className="testimonials" data-aos="fade-up">
                             <img src={Quote} alt="" className="quote"/>
                                 <Slider {...settings}>
                                     {testimonials.map((testimonial) => (

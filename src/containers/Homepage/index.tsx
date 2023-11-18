@@ -1,12 +1,13 @@
 import BannerSection from 'components/Homepage/BannerSection'
-import SuccessSection from 'components/Homepage/SuccessSection'
+import OurStorySection from 'components/Homepage/OurStorySection'
 import ProductSection from 'components/Homepage/ProductSection'
 import AboutSection from 'components/Homepage/AboutSection'
+import OurJourneysection from 'components/Homepage/OurJourneysection'
 import ServiceSection from 'components/Homepage/ServiceSection'
 import TechnologySection from 'components/Homepage/TechnologySection'
-import TestimonialSection from 'components/Homepage/TestimonialSection'
-import CounterSection from 'components/Homepage/CounterSection'
-import BlogSection from 'components/Homepage/BlogSection'
+import TestimonialSection from 'components/Common/TestimonialSection'
+import CounterSection from 'components/Common/CounterSection'
+import BlogSection from 'components/Common/BlogSection'
 
 const Homepage = () => {
   return (
@@ -14,9 +15,10 @@ const Homepage = () => {
 
       <div className="home-page">
         <BannerSection />
-        <SuccessSection />
-        <ProductSection />
         <AboutSection />
+        <OurJourneysection />
+        <OurStorySection />
+        <ProductSection />         
         <ServiceSection />
         <TechnologySection />
         <TestimonialSection />

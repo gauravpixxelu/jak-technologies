@@ -11,6 +11,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './assets/scss/global.css';
 import './assets/scss/responsive.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  disable: false,
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate',
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  offset: 120,
+  delay: 0,
+  duration: 1000,
+  easing: 'ease',
+  once: false,
+  mirror: false,
+  anchorPlacement: 'top-bottom',
+});
 
 
 const { store } = storeInstance;

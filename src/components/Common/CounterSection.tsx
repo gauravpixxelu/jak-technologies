@@ -40,7 +40,7 @@ const CounterSection = (props: Props) => {
 
             <section className="counter-sec">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" data-aos="fade-up">
                         {counter.map((counters) => (
                             <div className="col-md-4" key={counters.id}>
                                 <div className="counter-sec-data">

@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 import Service_1 from 'assets/images/services/service-1.png'
 import Service_2 from 'assets/images/services/service-2.png'
 import Service_3 from 'assets/images/services/service-3.png'
@@ -74,21 +77,50 @@ const service: CustomFeatureDto[] = [
     },
 ];
 
+
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                rows: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                rows: 1
+            }
+        }
+    ],
+};
+
+
+
 type Props = {};
 
-const ServiceSection = (props: Props) => {
+const ServicesSlider = (props: Props) => {
     return (
         <>
 
-            <section className="service-sec">
-                <div className="container">
-                    <div className="hdng" data-aos="fade-up">
-                        <h2 className="hdng-h2">Our Services</h2>
-                        <h6 className="hdng-h6">Driven by Passion Enhanced by knowledge &BI, Analytics, Data Science, IoT, ML</h6>
+            <section className="service-slider">
+                <div className="container" data-aos="fade-up">
+                    <div className="hdng">
+                        <h2 className="hdng-h2">Explore our other services</h2>
                     </div>
-                    <div className="row" data-aos="fade-up">
+                    <div className="row">
+                    <Slider {...settings}>
                         {service.map((services) => (
-                            <div className="col-md-3" key={services.id}>
+                            <div className="slider-services" key={services.id}>
                                 <div className="service-box">
                                     <img src={services.image} alt="" />
                                     <div className="service-box-txt">
@@ -99,6 +131,7 @@ const ServiceSection = (props: Props) => {
                                 </div>
                             </div>
                         ))}
+                        </Slider>
                     </div>
                 </div>
             </section>
@@ -107,4 +140,4 @@ const ServiceSection = (props: Props) => {
     );
 };
 
-export default ServiceSection;
+export default ServicesSlider;
