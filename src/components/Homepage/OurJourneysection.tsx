@@ -51,7 +51,7 @@ const OurStorySection = (props: Props) => {
 
                             <div className="one-box-sec jorney-4" data-aos="fade-right">
                                 <div className="month-code">
-                                    <h4>2023 (Q2)</h4>
+                                    <h4>2023 (Quarter 2)</h4>
                                 </div>
                                 <ul className="listing-journey">
                                     <li>3th March 2023 JAK Technologies was formed & registered</li>
@@ -63,7 +63,7 @@ const OurStorySection = (props: Props) => {
 
                             <div className="one-box-sec jorney-5" data-aos="fade-left">
                                 <div className="month-code">
-                                    <h4>2023 (Q3)</h4>
+                                    <h4>2023 (Quarter 3)</h4>
                                 </div>
                                 <ul className="listing-journey">
                                     <li>Fully encrypted HR datamart delivered to ETLife</li>
