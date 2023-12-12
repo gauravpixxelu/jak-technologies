@@ -6,7 +6,7 @@ const AboutSection = (props: Props) => {
     return (
         <>
 
-            <section className="about-sec">
+            <section className="about-sec" id="about">
                 <div className="inner-section">
                 <div className="container">
                     <div className="row"  data-aos="fade-up">

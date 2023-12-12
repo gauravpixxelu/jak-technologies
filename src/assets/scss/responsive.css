@@ -1,4 +1,89 @@
 @media screen and (max-width:767px) {
+
+    .Comming-content h4 {
+        color: #fff;
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+    }
+    section.comming-page {
+        min-height: 429px;
+        background-position: top;
+    }
+    .testimonial-box-data .testimonial-box-avtar h6 {
+        width: 244px;
+    }
+    .testimonial-box-content p {
+        font-size: 14px;
+    }
+    .service-slider {
+        background: #fff;
+        padding-bottom: 143px;
+    }
+    .testimonial-box {
+        padding: 0 0 0 0px;
+    }
+    .heading-proform h3.helping-head {
+        font-size: 26px;
+    }
+    .heading-proform {
+        margin-top: 28px;
+    }
+    .heading-proform p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .cloud-end {
+        margin-bottom: 20px;
+    }
+    .site-footer .footer-data h3 {
+        font-size: 25px;
+    }
+    .testimonial-sec .hdng {
+        padding: 30px 10px;
+    }
+    .bottom-links .listing {
+        display: block;
+        column-count: 2;
+    }
+    section#partner .techno {
+        padding-bottom: 20px;
+    }
+    .product-inners .hdng.classicl-dotts {
+        margin: 0;
+    }
+    .footer-links .listing li {
+        padding-bottom: 4px;
+    }
+    .footer-links .listing li a {
+        font-size: 13px;
+    }
+    .row.bottom-footer {
+        margin: 15px 0;
+    }
+    .copyright p {
+        margin-bottom: 10px !important;
+    }
+    .addres-box p {
+        font-size: 13px;
+    }
+    .bottom-links ul.listing li button {
+        padding: 0;
+    }
+    p.cost-side {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    .detail-blog-design p strong {
+        font-size: 16px;
+    }
+    .detail-blog-design p {
+        font-size: 15px;
+        line-height: 24px;
+    }
     .site-header .navbar-collapse {
         z-index: 9999;
         min-height: 100vh;
@@ -11,24 +96,30 @@
         background: #000;
         transition: 0.2s;
     }
+
     .site-header .navbar-nav li.nav-item {
         padding: 10px 20px;
     }
-    .site-header .navbar-collapse.show { 
+
+    .site-header .navbar-collapse.show {
         transform: translateX(0) !important;
     }
-    .site-header .navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link {
+
+    .site-header .navbar-collapse>ul.navbar-nav>li.nav-item>a.nav-link {
         min-height: auto;
     }
+
     .site-header .navbar-collapse .navbar-nav li.nav-item a:before {
         display: none;
     }
+
     .site-header .navbar button.navbar-toggler {
         padding: 0;
         border: 0;
         outline: 0;
         box-shadow: 0 0 0 0 #fff;
     }
+
     .navbar-toggler span.navbar-toggler-icon:before {
         content: '';
         width: 20px;
@@ -39,6 +130,7 @@
         left: 0;
         border-radius: 10px;
     }
+
     .navbar-toggler span.navbar-toggler-icon:after {
         content: '';
         width: 30px;
@@ -49,23 +141,28 @@
         left: 0;
         border-radius: 10px;
     }
+
     .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon {
         transform: rotate(45deg);
         width: 35px;
         height: 4px;
     }
+
     .site-header .navbar-nav li.nav-item a.nav-link {
         color: #fff;
         font-size: 20px;
     }
+
     .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon:before {
         transform: rotate(90deg);
         width: 35px;
         top: 0;
     }
+
     .site-header .navbar .navbar-toggler[aria-expanded="true"] span.navbar-toggler-icon:after {
         display: none;
     }
+
     .navbar-toggler span.navbar-toggler-icon {
         width: 40px;
         height: 3px;
@@ -73,120 +170,379 @@
         border-radius: 20px;
         position: relative;
         transition: 0.2s;
-    } 
+    }
+
     .banner {
         height: 60vh;
     }
-    h1.hdng-h1 {  
+
+    h1.hdng-h1 {
         font-size: 30px;
         line-height: 40px;
         padding-top: 50px;
     }
+
     .banner-data p {
         font-size: 16px;
+        margin: 15px 0;
     }
+
+    .service-slider {
+        padding: 35px 0;
+    }
+
+    .custom-btn {
+        font-size: 15px;
+        padding: 8px 23px;
+    }
+
     .success-sec-data {
         margin-bottom: 30px;
     }
+
     .success-sec-data .success-sec-img {
         margin: 0 auto 20px;
     }
+
     h2.hdng-h2 {
-        font-size: 34px;
+        font-size: 30px;
     }
+
     h6.hdng-h6 {
         font-size: 20px;
     }
+
     .product-inner {
         padding: 34px 0;
     }
+
     .about-sec-txt h5 {
         margin-top: 14px;
     }
+
     h4.hdng-h4 {
         font-size: 24px;
     }
+
     .about-sec {
         padding: 50px 0;
     }
+
     p.para-16 {
         margin-top: 16px;
     }
+
     .techno {
-        padding: 50px 0;
+        padding: 30px 0;
     }
+
     .testimonials .quote {
         width: 26px;
     }
+
     .testimonial-box-data {
         margin-top: 28px;
     }
+
     .counter-sec-data h2.hdng-h2 {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 20px;
     }
+
     .counter-sec-data p {
         font-size: 17px;
     }
+
     .counter-sec .col-md-4 {
         width: 33%;
     }
+
     .counter-sec-data img {
         width: 40px;
     }
+
     .blog-sec {
-        padding: 50px 0;
+        padding: 35px 0;
     }
+
+    .testimonials {
+        padding: 0 10px;
+    }
+
     .blog-box {
         margin-bottom: 30px;
     }
+
     .blog-btn {
         margin-top: 30px;
     }
+
     .site-footer .col {
         flex: 0 0 50%;
     }
+
     .site-footer .row .col:first-child {
         flex: 0 0 100%;
     }
+
     .site-footer .row .col:last-child {
         flex: 0 0 100%;
     }
+
     .site-footer .footer-data h3 br {
         display: none;
     }
+
     .footer-data {
         margin-bottom: 24px;
     }
+
     .footer-cnt {
         margin-top: 16px;
     }
+
     .bottom-footer {
         margin-top: 40px;
     }
+
     .bottom-links .listing li a {
         font-size: 14px;
     }
+
     .copyright p {
         font-size: 13px;
     }
-    .contact-details p { 
+
+    .contact-details p {
         font-size: 16px;
     }
+
     .testimonial-box-content {
         margin-right: 0;
     }
+
     .service-sec {
         padding-bottom: 55px;
     }
+
     .services-banner .services-banner-data {
         padding: 20px;
         margin-top: 20px;
     }
+
     .services-banner .services-banner-data p {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 10px;
     }
 
+    ul.navbar-nav {
+        padding-top: 110px;
+    }
+
+    ul.navbar-nav li {
+        text-align: left;
+        padding: 16px 15px !important;
+    }
+
+    .about-sec-txt {
+        padding: 0px 0 0 12px;
+    }
+
+    h1.hdng-h1 {
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 48px;
+    }
+
+    .logos-clients {
+        position: relative;
+        display: block;
+        column-count: 3;
+        top: 40px;
+    }
+
+    .Featured-in-code h4 {
+        font-size: 15px;
+    }
+
+    .Featured-in-code.aos-init.aos-animate {
+        width: 100%;
+    }
+
+    .one-box-sec {
+        position: relative;
+        width: 100%;
+    }
+    .jorney-7 {
+        left: 0;
+    }
+    .bar-journey img {
+        display: none;
+    }
+    .techno h2.hdng-h2 {
+        font-size: 26px;
+    }
+    .one-box-sec.jorney-1 {
+        right: 0;
+        top: 0;
+    }
+
+    .one-box-sec.jorney-2 {
+        top: 0;
+        left: 0;
+    }
+
+    .one-box-sec.jorney-3 {
+        right: 0;
+        top: 0;
+    }
+
+    .one-box-sec.jorney-4 {
+        top: 0;
+        left: 0;
+    }
+
+    li.cloud-list-close img {
+        display: flex;
+    }
+
+    li.cloud-list-close {
+        display: flex;
+    }
+
+    .one-box-sec.jorney-5 {
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .one-box-sec.jorney-6 {
+        bottom: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .bar-journey {
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one-box-sec {
+        margin-bottom: 20px;
+    }
+
+    .about-sec-txt p {
+        font-size: 14px;
+    }
+
+    .product-inners {
+        padding: 25px 0;
+    }
+
+    .classicl-dotts {
+        padding: 25px 15px;
+    }
+
+    .product-sec {
+        margin: 0 3%;
+    }
+
+    p.all-pargraph-design {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .our-story-sec {
+        padding: 40px 0;
+    }
+
+    .loop-content-opt {
+        padding-left: 2px;
+        padding-top: 20px;
+    }
+
+    .row.boxing-tebs {
+        margin-top: 26px;
+    }
+
+    .product-box {
+        padding: 5px 11px 20px;
+        min-height: auto;
+    }
+
+    section.service-sec h6.hdng-h6 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .service-box .service-box-txt p {
+        min-height: auto;
+    }
+
+    .blog-box-txt p {
+        font-size: 15px;
+    }
+
+    .about-sec-txt h2.hdng-h2 {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .about-sec {
+        margin: 0 3%;
+    }
+
+    .about-sec .inner-section {
+        padding: 16px 0px 18px;
+        margin-top: -8%;
+    }
+
+    .about-sec-txt h6.hdng-h6 {
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    .about-sec-img {
+        width: 87%;
+        margin: 0 auto;
+    }
+
+    .service-sec {
+        padding-bottom: 15px;
+    }
+
+    .technology-sec {
+        margin: 0 3%;
+    }
+
+    section.technology-sec p.para-16 {
+        text-align: center;
+        width: 100%;
+        margin: 13px auto 40px;
+        font-size: 15px;
+    }
+
+    .technology-sec-data img {
+        width: 98%;
+    }
+    .techno .col-md-3 {
+        width: 50%;
+    }
+    .ReactModal__Content.ReactModal__Content--after-open {
+        width: 95%;
+        margin: 0 auto;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 10px !important;
+    }
+    .site-footer {
+        padding: 30px 0 0;
+    }
+    .testimonial-sec {
+        padding: 70px 0 0;
+    }
 }

@@ -9,7 +9,7 @@ const OurStorySection = (props: Props) => {
     return (
         <>
         
-        <div className="our-story-sec">
+        <div className="our-story-sec" id="story">
             <div className="container">
                 <div className="row"  data-aos="fade-up">
                     <div className="col-md-6">

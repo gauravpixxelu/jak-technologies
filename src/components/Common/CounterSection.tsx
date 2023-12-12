@@ -1,61 +1,70 @@
-import Delivery from 'assets/icons/homepage/delivery.svg'
-import Retention from 'assets/icons/homepage/retention.svg'
-import Success from 'assets/icons/homepage/success.svg'
+import React, { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+import Delivery from 'assets/icons/homepage/delivery.svg';
+import Retention from 'assets/icons/homepage/retention.svg';
+import Success from 'assets/icons/homepage/success.svg';
 
-
-interface CustomFeatureDto {
-    id: number;
-    title: string;
-    text: string;
-    image: string;
+interface CounterProps {
+  endValue: number;
+  suffix: string;
+  icon: string;
+  title: string;
 }
 
-const counter: CustomFeatureDto[] = [
-    {
-        id: 1,
-        title: "59.5%",
-        text: "Success Rate",
-        image: Success,
-    },
-    {
-        id: 2,
-        title: "59.7%",
-        text: "Customer Retention",
-        image: Retention,
-    },
-    {
-        id: 3,
-        title: "57.5%",
-        text: "One-time Delivery",
-        image: Delivery,
-    },
-];
+const Counter: React.FC<CounterProps> = ({ endValue, suffix, icon, title }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const counterRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
 
-type Props = {};
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      setIsVisible(entry.isIntersecting);
+    }, options);
 
-const CounterSection = (props: Props) => {
-    return (
-        <>
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
 
-            <section className="counter-sec">
-                <div className="container">
-                    <div className="row" data-aos="fade-up">
-                        {counter.map((counters) => (
-                            <div className="col-md-4" key={counters.id}>
-                                <div className="counter-sec-data">
-                                    <img src={counters.image} alt="" />
-                                    <h2 className="hdng-h2">{counters.title}</h2>
-                                    <p>{counters.text}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, []);
 
-        </>
-    );
+  return (
+    <div className="col-md-4" ref={counterRef}>
+      {isVisible && (
+        <div className="counter-sec-data">
+          <img src={icon} alt="" />
+          <h2 className="hdng-h2">
+            <CountUp end={endValue} suffix={suffix} />
+          </h2>
+          <p>{title}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const CounterSection: React.FC = () => {
+  return (
+    <section className="counter-sec">
+      <div className="container">
+        <div className="row" data-aos="fade-up">
+          <Counter endValue={98.5} suffix=".5%" icon={Success} title="Success Rate" />
+          <Counter endValue={97.5} suffix=".5%" icon={Retention} title="Customer Retention" />
+          <Counter endValue={95.5} suffix=".5%" icon={Delivery} title="One-time Delivery" />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default CounterSection;

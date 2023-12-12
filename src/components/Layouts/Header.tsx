@@ -51,27 +51,37 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="">About us</Link>
+                <a className="nav-link" href="#about">About us</a>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="">Products</Link>
+                <a className="nav-link" href="#journey">Our Journey</a>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="">Services</Link>
+                <a className="nav-link" href="#story">Our Story</a>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="">Competency Centers</Link>
+                <a className="nav-link" href="#product">Products</a>
               </li>
+
               <li className="nav-item">
-                <Link className="nav-link" to="">Solutions</Link>
+                <a className="nav-link" href="#service">Services</a>
               </li>
+
+              {/* <li className="nav-item">
+                <a className="nav-link" href="#partner">Our Technological</a>
+              </li> */}
+
               <li className="nav-item">
-                <Link className="nav-link" to="">Partners</Link>
-              </li>
+                <a className="nav-link" href="/blog">Blog</a>
+              </li> 
+
             </ul>
           </div>
           <div className="mobile">
-            <h4><span>Mobile Number</span>(+91) 98161 55555</h4>
+            <h4><span>Mobile Number</span>(+91) 9702738111</h4>
           </div>
           <button
             className={`navbar-toggler ${isMobileMenuOpen ? 'collapsed' : ''}`}

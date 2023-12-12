@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import Blog_Img from 'assets/images/homepage/blog.jpg'
+import Blog_1 from 'assets/images/homepage/Revolutioniz.jpg'
+import Blog_3 from 'assets/images/homepage/Data-Platforms.jpg'
+import Blog_2 from 'assets/images/homepage/Unleashing.jpg'
 
 interface CustomFeatureDto {
     id: number;
@@ -13,27 +15,27 @@ interface CustomFeatureDto {
 const blog: CustomFeatureDto[] = [
     {
         id: 1,
-        image: Blog_Img,
+        image: Blog_3,
         date: "October 18, 2023",
-        title: "Apple's Secret AI Sauce: Cook Hints at a Game-Changing Update!",
-        text: "Alright, imagine Apple's money situation like a big fruit stand. Now, their stand is usually jam-packed with people buying all sorts of things, but lately, they've noticed that folks aren't filling their baskets quite as much as before...",
-        link: "#",
+        title: "Generative AI and Data Platforms with JAK Technologies",
+        text: "In the ever-evolving landscape of Insurtech, JAK Technologies stands at the forefront, driving innovation through the convergence of Generative AI and cutting-edge Data Platforms. Our commitment to reshaping the future of insurance is reflected in our pioneering....",
+        link: "/Generative",
     },
     {
         id: 2,
-        image: Blog_Img,
+        image: Blog_1,
         date: "October 18, 2023",
-        title: "Apple's Secret AI Sauce: Cook Hints at a Game-Changing Update!",
-        text: "Alright, imagine Apple's money situation like a big fruit stand. Now, their stand is usually jam-packed with people buying all sorts of things, but lately, they've noticed that folks aren't filling their baskets quite as much as before...",
-        link: "#",
+        title: "The Role of Generative AI in Shaping the Future",
+        text: "In the dynamic realm of technology, the marriage of Generative AI and Insurtech is proving to be a game-changer. At JAK Technologies, we're at the forefront of this transformative intersection, harnessing the power of Generative AI to redefine the landscape of insurance technology....",
+        link: "/role-of-generative-AI",
     },
     {
         id: 3,
-        image: Blog_Img,
+        image: Blog_2,
         date: "October 18, 2023",
-        title: "Apple's Secret AI Sauce: Cook Hints at a Game-Changing Update!",
-        text: "Alright, imagine Apple's money situation like a big fruit stand. Now, their stand is usually jam-packed with people buying all sorts of things, but lately, they've noticed that folks aren't filling their baskets quite as much as before...",
-        link: "#",
+        title: "Teaching Language Models Algorithmic Thinking",
+        text: "In the ever-evolving landscape of artificial intelligence, the quest to enhance language models reaches new heights. At JAK Technologies, we are committed to pushing the boundaries of what language models can achieve. Today, we delve into a fascinating realm – teaching language models to reason algorithmically....",
+        link: "/teaching-language-models",
     },
 ];
 
@@ -43,7 +45,7 @@ const BlogSection = (props: Props) => {
     return (
         <>
 
-            <section className="blog-sec">
+            <section className="blog-sec" id="blog">
                 <div className="container">
                     <div className="hdng" data-aos="fade-up">
                         <h2 className="hdng-h2">Our Blog and Insight</h2>
@@ -66,7 +68,7 @@ const BlogSection = (props: Props) => {
                         ))}
                     </div>
                     <div className="blog-btn" data-aos="fade-up">
-                        <Link className="custom-btn2" to="#"><span>View All Blogs</span></Link>
+                        <Link className="custom-btn2" to="/blog"><span>View All Blogs</span></Link>
                     </div>
                 </div>
             </section>

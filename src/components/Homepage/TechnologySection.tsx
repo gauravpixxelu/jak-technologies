@@ -23,14 +23,14 @@ const technology: CustomFeatureDto[] = [
     {
         id: 1,
         image: Pentaho,
-        text: "Pentaho / SSIS / SAP BODS",
+        text: "",
         bgColor: "#EAF5FF",
         textColor: "#024A87",
     },
     {
         id: 2,
         image: React,
-        text: "React JS",
+        text: "",
         bgColor: "#E2FBFF",
         textColor: "#009DBA",
     },
@@ -44,63 +44,63 @@ const technology: CustomFeatureDto[] = [
     {
         id: 4,
         image: Pandas,
-        text: "Pandas",
+        text: "",
         bgColor: "#ECE8FF",
         textColor: "#1B00B0",
     },
     {
         id: 5,
         image: Postgre,
-        text: "Postgres SQL",
+        text: "",
         bgColor: "#EAF5FF",
         textColor: "#336790",
     },
     {
         id: 6,
         image: Flask,
-        text: "Flask",
+        text: "",
         bgColor: "#F9F9F9",
         textColor: "#000000",
     },
     {
         id: 7,
         image: OpenAI,
-        text: "Open AI",
+        text: "",
         bgColor: "#E9FFFA",
         textColor: "#068C6B",
     },
     {
         id: 8,
         image: Echarts,
-        text: "Apache E Charts",
+        text: "",
         bgColor: "#FFEDF1",
         textColor: "#E43961",
     },
     {
         id: 9,
         image: Spacy,
-        text: "Spacy",
+        text: "",
         bgColor: "#F4FCFF",
         textColor: "#09A3D5",
     },
     {
         id: 10,
         image: LangChain,
-        text: "Langchain",
+        text: "",
         bgColor: "#EAF5FF",
         textColor: "#0B448C",
     },
     {
         id: 11,
         image: Sap,
-        text: "MSBI / SAP BI / Tableau",
+        text: "",
         bgColor: "#EAF5FF",
         textColor: "#0B1C71",
     },    
     {
         id: 12,
         image: Amazon,
-        text: "AWS RDS For Storage Data/AWS Services (EC2, S3, API Gateway, Lambda...)",
+        text: "",
         bgColor: "#FFF4E8",
         textColor: "#F68D11",
     },
@@ -113,12 +113,12 @@ const TechnologySection = (props: Props) => {
     return (
         <>
 
-            <section className="technology-sec">
+            <section className="technology-sec" id="partner">
                 <div className="techno">
                     <div className="container">
                         <div className="hdng" data-aos="fade-up">
-                            <h2 className="hdng-h2">Our Technological Expertise & Tech Stack</h2>
-                            <p className="para-16">As a leading Data Transformation company, JAK Tech possesses profound expertise in implementing BI, Analytics, Big Data, and Data Science projects. Our capabilities span various facets, encompassing data integration, governance, dashboard and report development, ad-hoc analysis, real-time analytics, migration, big data analytics, data science, mobile BI, cloud BI, and production support. Across diverse technology stacks, we have successfully delivered solutions, including specialized offerings in Pentaho, SAP BI, MS BI, services and beyond</p>
+                            <h2 className="hdng-h2">Unveiling Our Technological Prowess: A Dive into Our Robust Tech Stack</h2>
+                            <p className="para-16">Data at the heart & Technology as the pulse, powering innovation and shaping tomorrow. As a forefront Data Transformation entity, JAK Tech holds extensive proficiency in executing BI, Analytics, Big Data, and Data Science initiatives. Our competencies cover a spectrum of areas, including data integration, governance, development of dashboards and reports, ad-hoc analysis, real-time analytics, migration, big data analytics, data science, mobile BI, cloud BI, and production support.</p>
                         </div>
                         <div className="row" data-aos="fade-up">
                             {technology.map((technologies) => (
