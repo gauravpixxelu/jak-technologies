@@ -51,23 +51,23 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#about">About us</a>
+                <a className="nav-link" href="/#about">About us</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#journey">Our Journey</a>
+                <a className="nav-link" href="/#journey">Our Journey</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#story">Our Story</a>
+                <a className="nav-link" href="/#story">Our Story</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#product">Products</a>
+                <a className="nav-link" href="/#product">Products</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#service">Services</a>
+                <a className="nav-link" href="/#service">Services</a>
               </li>
 
               {/* <li className="nav-item">

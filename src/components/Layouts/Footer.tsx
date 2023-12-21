@@ -35,7 +35,7 @@ const closePopup = () => {
               <div className="footer-data">
                 <Link className="navbar-brand" to="/"><img src={Logo} alt="" /></Link>
                 <h3>Let’s Create the <br />Next Now.</h3>
-                <Link className="custom-btn2" to="#"><span>Get in Touch</span></Link>
+                <button className="custom-btn2" onClick={openPopup}><span>Get in Touch</span></button>
                 <ul className="listing social">
                   <li><Link to="https://www.linkedin.com/company/jak-technologies-ltd/" target="_blank" ><img src={Linkedin} alt="" /></Link></li>
                   <li><Link to="https://twitter.com/JAKTech81" target="_blank" ><img src={Twitter} alt="" /></Link></li>
@@ -48,13 +48,13 @@ const closePopup = () => {
               <div className="footer-links">
                 <h4>Company</h4>
                 <ul className="listing">
-                  <li><Link to="/">About us</Link></li>
-                  <li><Link to="/">Work</Link></li>
-                  <li><Link to="/">Our Process</Link></li>
-                  <li><Link to="/">Insights</Link></li>
-                  <li><Link to="/">Become a Partner </Link></li>
-                  <li><Link to="/">Support</Link></li>
-                  <li><Link to="/">FAQ</Link></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="/coming-soon">Work</a></li>
+                  <li><a href="/coming-soon">Our Process</a></li>
+                  <li><a href="/coming-soon">Insights</a></li>
+                  <li><a href="/coming-soon">Become a Partner </a></li>
+                  <li><a href="/coming-soon">Support</a></li>
+                  <li><a href="/coming-soon">FAQ</a></li>
                 </ul>
               </div>
             </div>
@@ -63,13 +63,13 @@ const closePopup = () => {
               <div className="footer-links">
                 <h4>Products</h4>
                 <ul className="listing">
-                  <li><Link to="/">Data Blend IQ</Link></li>
-                  <li><Link to="/">Data Catalogue</Link></li>
-                  <li><Link to="/">KPI Compendium</Link></li>
-                  <li><Link to="/">Integrify Data</Link></li>
-                  <li><Link to="/">Intelli Dash Pro</Link></li>
-                  <li><Link to="/">Insight IQ</Link></li>
-                  <li><Link to="/">iPowerXL</Link></li>
+                  <li><a href="#product">Data Blend IQ</a></li>
+                  <li><a href="#product">Data Catalogue</a></li>
+                  <li><a href ="#product">KPI Compendium</a></li>
+                  <li><a href ="#product">Integrify Data</a></li>
+                  <li><a href="#product">Intelli Dash Pro</a></li>
+                  <li><a href="#product">Insight IQ</a></li>
+                  <li><a href ="#product">iPowerXL</a></li>
                 </ul>
               </div>
             </div>
@@ -87,7 +87,7 @@ const closePopup = () => {
                 </div>
                 <div className="contact-details">
                   <img src={Phone} alt="" />
-                  <p>+91 97027 38111, +91 74062 04250</p>
+                  <p className="contact-op">+91 97027 38111,<br/> +91 74062 04250</p>
                 </div>
                 <div className="contact-details">
                   <img src={Message} alt="" />

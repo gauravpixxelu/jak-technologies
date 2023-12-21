@@ -8,11 +8,10 @@ import TechnologySection from 'components/Homepage/TechnologySection'
 import TestimonialSection from 'components/Common/TestimonialSection'
 import CounterSection from 'components/Common/CounterSection'
 import BlogSection from 'components/Common/BlogSection'
-
+import Textslider from 'components/Homepage/Textslider'
 const Homepage = () => {
   return (
     <>
-
       <div className="home-page">
         <BannerSection />
         <AboutSection />
@@ -24,6 +23,7 @@ const Homepage = () => {
         <TestimonialSection />
         <CounterSection />
         <BlogSection />
+        <Textslider/>
       </div>
 
     </>

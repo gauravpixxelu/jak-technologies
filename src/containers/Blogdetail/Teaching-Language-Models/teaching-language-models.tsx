@@ -1,18 +1,19 @@
-import React from 'react';
-import Teaching from 'assets/images/services/blog-detail/Teaching.jpg';
-import TestimonialSection from 'components/Common/TestimonialSection';
-import CounterSection from 'components/Common/CounterSection';
-
-
-
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import Teaching from 'assets/images/services/blog-detail/Teaching.webp';
+import TestimonialSection from 'components/Common/TestimonialSection';
+import CounterSection from 'components/Common/CounterSection';
+
 import Blog_1 from 'assets/images/homepage/Revolutioniz.jpg'
 import Blog_2 from 'assets/images/homepage/Is-Generative.jpg'
 import Blog_3 from 'assets/images/homepage/Data-Platforms.jpg'
 import Blog_4 from 'assets/images/homepage/Unleashing.jpg'
+
+
+
 interface CustomFeatureDto {
     id: number;
     text: string;
@@ -85,7 +86,12 @@ const settings = {
 
 type Props = {};
 
-const teaching = (props: Props) => {
+function TeachingLanguage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []); 
+
     return (
         <>
             <section className="services-banner">
@@ -146,7 +152,7 @@ const teaching = (props: Props) => {
                 <div className="container" data-aos="fade-up">
                     <div className="hdng">
                         <h2 className="hdng-h2">View other Blogs</h2>
-                        <p className='cost-side'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                        <p className='cost-side'>'Dive into the depths of data brilliance. Explore Our Blog & Insights for cutting-edge perspectives on data warehousing, visualization, generative AI, machine learning and analytics – where innovation meets information.'</p>
                     </div>
                     <div className="row">
                     <Slider {...settings}>
@@ -179,4 +185,4 @@ const teaching = (props: Props) => {
     );
 };
 
-export default teaching;
+export default TeachingLanguage;

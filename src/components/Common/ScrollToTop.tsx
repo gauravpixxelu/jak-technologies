@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Scroll from 'assets/images/footer/up-arrow.svg'
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,12 +30,14 @@ const ScrollToTop = () => {
   }, []);
 
   return (
+    <div className='scroll-top-design'>
     <button
       className={`scroll-to-top ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
-      Scroll to Top
+      <img src={ Scroll } alt="" />
     </button>
+    </div>
   );
 };
 

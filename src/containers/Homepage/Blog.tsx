@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Blog_1 from 'assets/images/homepage/Revolutioniz.jpg'
 import Blog_2 from 'assets/images/homepage/Is-Generative.jpg'
@@ -53,9 +54,17 @@ const blog: CustomFeatureDto[] = [
     },
 ];
 
+
+
 type Props = {};
 
+
 const BlogSection = (props: Props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);  
+    
     return (
         <>
 
@@ -66,7 +75,7 @@ const BlogSection = (props: Props) => {
                 <div className="container">
                     <div className="hdng" data-aos="fade-up">
                         <h2 className="hdng-h2">Our Blog and Insight</h2>
-                        <p className="para-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                        <p className="para-16">'Dive into the depths of data brilliance. Explore Our Blog & Insights for cutting-edge perspectives on data warehousing, visualization, generative AI, machine learning and analytics – where innovation meets information.'</p>
                     </div>
                     <div className="row" data-aos="fade-up">
                         {blog.map((blogs) => (

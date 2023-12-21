@@ -5,6 +5,10 @@ import NotFound from '../components/NotFound';
 import Loader from '../components/Common/Loader';
 
 
+
+
+
+
 const ProtectedLayout = React.lazy(
   () => import("../containers/Layouts/ProtectedLayout"));
 const Homepage = React.lazy(() => import("../containers/Homepage"));
@@ -29,10 +33,10 @@ const Main = () => {
           <Route path="/role-of-generative-AI" element={<PublicRoute component={Role} />} />   
           <Route path="/teaching-language-models" element={<PublicRoute component={Teaching} />} />   
           <Route path="/Generative-AI-Good-or-Bad" element={<PublicRoute component={Generative_AI_Good_or_Bad} />} /> 
-          <Route path="/comming-soon" element={<PublicRoute component={Comming_soon} />} />   
+          <Route path="/coming-soon" element={<PublicRoute component={Comming_soon} />} />   
           <Route path="/data-integration" element={<PublicRoute component={DataIntegration} />} />  
-
           <Route path="#" element={<PublicRoute component={Blog_slider} />} /> 
+
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

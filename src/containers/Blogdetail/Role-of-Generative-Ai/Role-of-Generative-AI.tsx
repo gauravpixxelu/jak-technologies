@@ -1,11 +1,9 @@
-import React from 'react';
+
+import { useEffect } from 'react';
+
 import generative from 'assets/images/services/blog-detail/generative.jpg';
 import TestimonialSection from 'components/Common/TestimonialSection'
 import CounterSection from 'components/Common/CounterSection'
-
-
-
-
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +19,6 @@ interface CustomFeatureDto {
     title: string;
     link: string;
 }
-
 
 const service: CustomFeatureDto[] = [
     {
@@ -88,6 +85,12 @@ const settings = {
 type Props = {};
 
 const Role = (props: Props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []); 
+
+
     return (
         <>
             <section className="services-banner">
@@ -98,8 +101,8 @@ const Role = (props: Props) => {
 
                     <div className='heading-proform'>
                         <h3 className='helping-head'>The Role of Generative AI in Shaping the Future</h3>
-                        <p>In the dynamic realm of technology, the marriage of Generative AI and Insurtech is proving to be a game-changer. At JAK Technologies, we're at the forefront of this transformative intersection, harnessing the power of Generative AI to redefine the landscape of insurance technology.</p> 
-                         </div>
+                        <p>In the dynamic realm of technology, the marriage of Generative AI and Insurtech is proving to be a game-changer. At JAK Technologies, we're at the forefront of this transformative intersection, harnessing the power of Generative AI to redefine the landscape of insurance technology.</p>
+                    </div>
 
 
 
@@ -162,35 +165,28 @@ const Role = (props: Props) => {
                 <div className="container" data-aos="fade-up">
                     <div className="hdng">
                         <h2 className="hdng-h2">View other Blogs</h2>
-                        <p className='cost-side'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                        <p className='cost-side'>'Dive into the depths of data brilliance. Explore Our Blog & Insights for cutting-edge perspectives on data warehousing, visualization, generative AI, machine learning and analytics – where innovation meets information.'</p>
                     </div>
                     <div className="row">
-                    <Slider {...settings}>
-                        {service.map((services) => (
-                            <div className="slider-services" key={services.id}>
-                                <div className="service-box">
-                                    <img src={services.image} alt="" />
-                                    <div className="service-box-txt">
-                                        <h4>{services.title}</h4>
-                                        <p>{services.text}</p>
-                                        <Link to={services.link}>Learn More</Link>
+                        <Slider {...settings}>
+                            {service.map((services) => (
+                                <div className="slider-services" key={services.id}>
+                                    <div className="service-box">
+                                        <img src={services.image} alt="" />
+                                        <div className="service-box-txt">
+                                            <h4>{services.title}</h4>
+                                            <p>{services.text}</p>
+                                            <Link to={services.link}>Learn More</Link>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
                         </Slider>
                     </div>
                 </div>
             </section>
-
-
-
             <TestimonialSection />
             <CounterSection />
-
-
-
-
         </>
     );
 };

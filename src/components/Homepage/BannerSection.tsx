@@ -8,7 +8,8 @@ import Image3 from 'assets/images/homepage/logo-client-3.png';
 import Image4 from 'assets/images/homepage/logo-client-4.png';
 import Image5 from 'assets/images/homepage/logo-client-5.png';
 
-
+import PopupForm from '../Common/PopupForm';
+import { useState } from 'react';
 const settings = {
     arrows: false,
     dots: false,
@@ -51,41 +52,28 @@ const clients: CustomFeatureDto[] = [
 type Props = {};
 
 const BannerSection = (props: Props) => {
+
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const openPopup = () => {
+        setIsPopupOpen(true);
+    };
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    };
     return (
         <>
-
             <section className="banner">
                 <div className="container">
                     <div className="banner-data" data-aos="fade-up">
-
                         <h1 className="hdng-h1">
-                            {/* <Slider {...settings}>                                
-                                <div>Streamline</div>
-                                <div>Facilitate</div>
-                                <div>Uncomplicate</div>
-                                <div>Clarify</div>
-                                <div>Ease</div>
-                                <div>Straighten</div>
-                                <div>Unburden</div>
-                            </Slider> */}
-                            <div>Simplify</div>
-                            Your Data & Digital Transformation Journey with JAK Technologies</h1>
+                            Simplify Your Data & Digital Transformation Journey with JAK Technologies</h1>
                         <p>Engaging visuals & infographics that represent the essence of Data & Digital Transformation Simplified.</p>
-                        <Link className="custom-btn" to="mailto:support@jaktech.in"><span>Get in Touch</span></Link>
+                        <button className="custom-btn" onClick={openPopup}><span>Get in Touch</span></button>
+                        <PopupForm isOpen={isPopupOpen} onRequestClose={closePopup} />
                     </div>
-                    {/* <div className="logos-clients" >
-                        <div className="Featured-in-code" data-aos="fade-right">
-                            <h4>Featured in</h4>
-                        </div>
-                        {clients.map((client) => (
-                            <div className="images-featured" key={client.id} data-aos="fade-left">
-                                <img src={client.image} alt="" />
-                            </div>
-                        ))}
-                    </div> */}
                 </div>
             </section>
-
         </>
     );
 };

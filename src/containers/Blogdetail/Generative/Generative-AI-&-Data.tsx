@@ -1,5 +1,6 @@
-import React from 'react';
-import Generative from 'assets/images/services/blog-detail/ger-AI.jpg';
+import { useEffect } from 'react';
+
+import del from 'assets/images/services/blog-detail/ger-AI.webp';
 import TestimonialSection from 'components/Common/TestimonialSection'
 import CounterSection from 'components/Common/CounterSection'
 
@@ -86,12 +87,17 @@ const settings = {
 
 type Props = {};
 
-const generative = (props: Props) => {
+function Generative() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []); 
+
     return (
         <>
             <section className="services-banner">
                 <div className="services-banner-img">
-                    <img src={Generative} alt="Service1" />
+                    <img src={del} alt="Service1" />
                 </div>
                 <div className="container">
 
@@ -148,7 +154,7 @@ const generative = (props: Props) => {
                 <div className="container" data-aos="fade-up">
                     <div className="hdng">
                         <h2 className="hdng-h2">View other Blogs</h2>
-                        <p className='cost-side'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                        <p className='cost-side'>'Dive into the depths of data brilliance. Explore Our Blog & Insights for cutting-edge perspectives on data warehousing, visualization, generative AI, machine learning and analytics – where innovation meets information.'</p>
                     </div>
                     <div className="row">
                     <Slider {...settings}>
@@ -169,10 +175,6 @@ const generative = (props: Props) => {
                 </div>
             </section>
 
-
-
-
-
             <TestimonialSection />
             <CounterSection />
 
@@ -183,4 +185,4 @@ const generative = (props: Props) => {
     );
 };
 
-export default generative;
+export default Generative;

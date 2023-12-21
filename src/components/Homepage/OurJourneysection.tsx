@@ -75,7 +75,7 @@ const OurStorySection = (props: Props) => {
 
                                 <div className="one-box-sec jorney-6" data-aos="fade-right">
                                     <div className="month-code">
-                                        <h4>2024 (Q4)</h4>
+                                        <h4>2024 (Quarter 4)</h4>
                                     </div>
                                     <ul className="listing-journey list-close-value">
                                         <li className='cloud-list-close'><img src={Echo} alt="" /> Exco Assistant</li>

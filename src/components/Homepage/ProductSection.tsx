@@ -12,28 +12,28 @@ const product = [
         image: Our_1,
         title: "Data Catalog",
         text: "Is our inhouse tool and methodology to discover the user data schema and predict our end-to-end data journey with KPI usage of the data set",
-        link: "/comming-soon",
+        link: "/coming-soon",
     },
     {
         id: 2,
         image: Our_2,
         title: "Integrify",
         text: "Empower your organization with the data confidence needed to drive strategic initiatives, reduce errors, and enhance overall operational efficiency.",
-        link: "/comming-soon",
+        link: "/coming-soon",
     },
     {
         id: 3,
         image: Our_3,
         title: "Intelli Dash Pro",
         text: "Where Data Comes to Life 📊 Unleash the Power of Visualization with CustomBI or PowerBI.",
-        link: "/comming-soon",
+        link: "/coming-soon",
     },
     {
         id: 4,
         image: Our_4,
         title: "Insight IQ",
         text: "Elevate Your Data Insights with InsightIQ 📈🔍 Empower Yourself to Analyze, Explore, and Create Data Pipelines with Ease.",
-        link: "/comming-soon",
+        link: "/coming-soon",
     },
     
 ];
@@ -44,7 +44,6 @@ type Props = {};
 const ProductSection = (props: Props) => {
     return (
         <>
-
             <section className="product-sec" id="product">
                 <div className="product-inners">
                     <div className="container">
