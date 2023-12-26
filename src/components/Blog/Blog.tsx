@@ -59,7 +59,7 @@ const blog: CustomFeatureDto[] = [
 type Props = {};
 
 
-const BlogSection = (props: Props) => {
+const Blog = (props: Props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -70,7 +70,6 @@ const BlogSection = (props: Props) => {
 
             <section className="blog-sec blog-page-code" id="blog">
                 <div className="blog-breadcrumb-colum">
-                    {/* <h4>Blog</h4> */}
                 </div>
                 <div className="container">
                     <div className="hdng" data-aos="fade-up">
@@ -96,11 +95,10 @@ const BlogSection = (props: Props) => {
                 </div>
             </section>
 
-            <TestimonialSection />
-            <CounterSection />
+            
 
         </>
     );
 };
 
-export default BlogSection;
+export default Blog;

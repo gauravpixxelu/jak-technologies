@@ -12,7 +12,7 @@ import Loader from '../components/Common/Loader';
 const ProtectedLayout = React.lazy(
   () => import("../containers/Layouts/ProtectedLayout"));
 const Homepage = React.lazy(() => import("../containers/Homepage"));
-const Blog = React.lazy(() => import("../containers/Homepage/Blog"));
+const Blog = React.lazy(() => import("../containers/Blog"));
 const Comming_soon = React.lazy(() => import("../containers/Homepage/Comingsoon"));
 const Generative = React.lazy(() => import("../containers/Blogdetail/Generative/Generative-AI-&-Data"));
 const Role = React.lazy(() => import("../containers/Blogdetail/Role-of-Generative-Ai/Role-of-Generative-AI"));

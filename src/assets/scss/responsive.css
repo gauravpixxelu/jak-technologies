@@ -1,14 +1,30 @@
 @media screen and (max-width:767px) {
+    .banner-data-footer .col-md-4 {
+        width: 25% !important;
+    }
     
+    .banner-data-footer .col-md-8 {
+        width: 75% !important;
+    }
     .banner-data-footer h1.hdng-h1 {
         display: block;
     }
     .banner-data-footer div {
-        font-size: 23px;
+        font-size: 18px;
         width: 100%;
-        text-align: left;
+        text-align: right;
         left: 0;
         text-decoration: none;
+        top: -8px;
+    }
+    .banner-data-footer h1.hdng-h1 .row {
+        display: flex;
+        align-items: center;
+    }
+    .banner-data-footer .col-md-8 h2 {
+        font-size: 15px;
+        text-align: left;
+        line-height: 20px;
     }
     .banner-data-footer h2 {
         font-size: 18px;
@@ -62,9 +78,22 @@
     }
     .Comming-content h4 {
         color: #fff;
-        font-size: 28px;
+        font-size: 22px;
         text-align: center;
         font-weight: bold;
+    }
+    .counter-sec {
+        padding: 35px 0;
+    }
+    p.coming-description {
+        font-size: 17px;
+    }
+    a.custom-btn-design {
+        width: 50%;
+        font-size: 16px;
+    }
+    .Comming-content img {
+        width: 50%;
     }
     section.comming-page {
         min-height: 429px;
@@ -613,20 +642,13 @@
 
 
 @media screen and (min-width:1200px) and (max-width:1600px) { 
-    .banner-data-footer h2 {
-        font-size: 24px;
-        width: 70% !important;
-        right: 100px;
-    }
-    .banner-data-footer div {
-        font-size: 24px;
-        width: 64%;
-        right: 120px;
-    }
+    
     .contact-op > br {
         display: block;
     }
     .testimonials .quote {
         top: -5%;
     }
-}
+} 
+
+
