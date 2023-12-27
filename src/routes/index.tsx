@@ -13,7 +13,7 @@ const ProtectedLayout = React.lazy(
   () => import("../containers/Layouts/ProtectedLayout"));
 const Homepage = React.lazy(() => import("../containers/Homepage"));
 const Blog = React.lazy(() => import("../containers/Blog"));
-const Comming_soon = React.lazy(() => import("../containers/Homepage/Comingsoon"));
+const CommingSoon = React.lazy(() => import("../containers/CommingSoon"));
 const Generative = React.lazy(() => import("../containers/Blogdetail/Generative/Generative-AI-&-Data"));
 const Role = React.lazy(() => import("../containers/Blogdetail/Role-of-Generative-Ai/Role-of-Generative-AI"));
 const Teaching = React.lazy(() => import("../containers/Blogdetail/Teaching-Language-Models/teaching-language-models"));
@@ -33,7 +33,7 @@ const Main = () => {
           <Route path="/role-of-generative-AI" element={<PublicRoute component={Role} />} />   
           <Route path="/teaching-language-models" element={<PublicRoute component={Teaching} />} />   
           <Route path="/Generative-AI-Good-or-Bad" element={<PublicRoute component={Generative_AI_Good_or_Bad} />} /> 
-          <Route path="/coming-soon" element={<PublicRoute component={Comming_soon} />} />   
+          <Route path="/coming-soon" element={<PublicRoute component={CommingSoon} />} />   
           <Route path="/data-integration" element={<PublicRoute component={DataIntegration} />} />  
           <Route path="#" element={<PublicRoute component={Blog_slider} />} /> 
 
