@@ -4,7 +4,7 @@ import Logo from 'assets/images/services/services-banners/logo-coming.png';
 
 type Props = {};
 
-const Coming = (props: Props) => {
+const ComingSoonSection = (props: Props) => {
     useEffect(() => {
         document.body.classList.add('Coming')
         return () => {
@@ -30,4 +30,4 @@ const Coming = (props: Props) => {
     );
 };
 
-export default Coming;
+export default ComingSoonSection;

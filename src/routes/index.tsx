@@ -20,7 +20,7 @@ const Teaching = React.lazy(() => import("../containers/Blogdetail/Teaching-Lang
 const Generative_AI_Good_or_Bad = React.lazy(() => import("../containers/Blogdetail/Generative-AI-Good-or-Bad/Generative-AI-Good-or-Bad"));
 const DataIntegration = React.lazy(() => import("../containers/Services/DataIntegration"));
 
-const Blog_slider = React.lazy(() => import("../containers/Blogdetail/Blog-slider/blog-slider"));
+const Blog_slider = React.lazy(() => import("../containers/Blogdetail/Blog-slider/blog-slider")); 
 
 const Main = () => {
   return (
@@ -36,7 +36,6 @@ const Main = () => {
           <Route path="/coming-soon" element={<PublicRoute component={CommingSoon} />} />   
           <Route path="/data-integration" element={<PublicRoute component={DataIntegration} />} />  
           <Route path="#" element={<PublicRoute component={Blog_slider} />} /> 
-
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
