@@ -39,7 +39,7 @@ const CounterSection: React.FC = () => {
         <div className="row" data-aos="fade-up">
           <Counter endValue={98.5} suffix=".5%" icon={Success} title="Success Rate" duration={3} delay={1} />
           <Counter endValue={97.5} suffix=".5%" icon={Retention} title="Customer Retention" duration={3} delay={1} />
-          <Counter endValue={95.5} suffix=".5%" icon={Delivery} title="One-time Delivery" duration={3} delay={1} />
+          <Counter endValue={95.5} suffix=".5%" icon={Delivery} title="On-time Delivery" duration={3} delay={1} />
         </div>
       </div>
     </section>
